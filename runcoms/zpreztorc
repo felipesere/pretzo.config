@@ -27,11 +27,15 @@ zstyle ':prezto:load' pmodule \
   'environment' \
   'terminal' \
   'editor' \
+  'history-substring-search' \
   'history' \
   'directory' \
   'spectrum' \
   'utility' \
+  'homebrew' \
+  'osx' \
   'completion' \
+  'syntax-highlighting' \
   'prompt'
 
 #
@@ -63,7 +67,7 @@ zstyle ':prezto:module:editor' key-bindings 'emacs'
 #
 
 # Set the query found color.
-# zstyle ':prezto:module:history-substring-search:color' found ''
+#zstyle ':prezto:module:history-substring-search:color' found ''
 
 # Set the query not found color.
 # zstyle ':prezto:module:history-substring-search:color' not-found ''
@@ -85,7 +89,7 @@ zstyle ':prezto:module:editor' key-bindings 'emacs'
 # Set the prompt theme to load.
 # Setting it to 'random' loads a random theme.
 # Auto set to 'off' on dumb terminals.
-zstyle ':prezto:module:prompt' theme 'sorin'
+zstyle ':prezto:module:prompt' theme 'steeef'
 
 #
 # Ruby

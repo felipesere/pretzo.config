@@ -44,11 +44,11 @@ function prompt_steeef_setup {
   # Use extended color pallete if available.
   if [[ $TERM = *256color* || $TERM = *rxvt* ]]; then
     _prompt_steeef_colors=(
-      "%F{81}"  # Turquoise
-      "%F{166}" # Orange
-      "%F{135}" # Purple
-      "%F{161}" # Hotpink
-      "%F{118}" # Limegreen
+      "%F{4}"  # Blue
+      "%F{2}" # Custom light green
+      "%F{6}"   # Custom-Green
+      "%F{9}" # Hotpink
+      "%F{3}" # Limegreen
     )
   else
     _prompt_steeef_colors=(
@@ -85,8 +85,7 @@ function prompt_steeef_setup {
   zstyle ':prezto:module:python:info:virtualenv' format '(%v)'
 
   # Define prompts.
-  PROMPT="
-${_prompt_steeef_colors[3]}%n%f at ${_prompt_steeef_colors[2]}%m%f in ${_prompt_steeef_colors[5]}%~%f "'${vcs_info_msg_0_}'"
+  PROMPT="${_prompt_steeef_colors[3]}%n%f at ${_prompt_steeef_colors[2]}%m%f in ${_prompt_steeef_colors[5]}%~%f "'${vcs_info_msg_0_}'"
 "'$python_info[virtualenv]'"$ "
   RPROMPT=''
 }
